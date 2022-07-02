@@ -3,6 +3,7 @@
 The machine that runs our Hercules-CI Agents, defined as `nixosConfigurations.ardana-ax101` in a flake.nix
 
 Currently Responsible: Yusuf Bera Ertan (yusuf.bera.ertan@platonic.systems)
+
 Formerly Responsible: Matthew Croughan (matt@croughan.sh)
 
 ## Deploy with Nix
