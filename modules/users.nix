@@ -9,7 +9,7 @@ in
         isNormalUser = true;
         openssh.authorizedKeys.keys = keys.yusdacra;
         extraGroups = [ "wheel" ];
-        hashedPassword = "$6$wZnyFXlzYYB3kAQd$jNvHAUfrEsPr4ADo8yiKNWId5sBLdUIBvUY6fKCWfMglBoFX497GkU3fslZ6wLEunxvFxoxNUD1/pOdx7ZNXW1";
+        hashedPassword = "$6$MskU0R2atQrmANGS$UzqlOrK1ni2EA77wM9AMmkE9XMYk5dyKmr0UW/9XQT17BIK1xDOeBudGV4rEtRBPT1PQ0F5ZxPywsuM7MaXdG/";
       };
       matthew = {
         isNormalUser = true;
