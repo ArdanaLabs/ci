@@ -14,7 +14,7 @@ in
     users = {
       deploy = {
         isNormalUser = true;
-        openssh.authorizedKeys.keys = keys.yusdacra ++ keys.matthew;
+        openssh.authorizedKeys.keys = keys.yusdacra;
       };
     };
   };
