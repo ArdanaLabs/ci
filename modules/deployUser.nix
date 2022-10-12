@@ -2,7 +2,7 @@ let
   keys = import ./keys.nix;
 in
 {
-  nix.trustedUsers = [ "deploy" ];
+  nix.settings.trusted-users = [ "deploy" ];
   security.sudo.extraRules = [{
     users = [ "deploy" ];
     commands = [{

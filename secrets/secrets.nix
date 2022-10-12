@@ -11,5 +11,4 @@ in
   "ardanaHerculesSecrets.age".publicKeys = [ users.marijan systems.ardana-ax101 ];
   "ardanaHerculesClusterJoinToken.age".publicKeys = [ users.marijan systems.ardana-ax101 ];
   "ardanaHerculesBinaryCaches.age".publicKeys = [ users.marijan systems.ardana-ax101 ];
-  "netrcSecrets.age".publicKeys = [ users.marijan systems.ardana-ax101 ];
 }
