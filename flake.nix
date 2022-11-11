@@ -5,8 +5,18 @@
     agenix.url = "github:ryantm/agenix";
     nixinate.url = "github:matthewcroughan/nixinate";
   };
-  outputs = { self, nixpkgs, hercules-ci-agent, agenix, nixinate }@inputs: {
+  outputs = { self, nixpkgs, hercules-ci-agent, agenix, nixinate }@inputs:
+  let
+    pkgs = nixpkgs.legacyPackages.x86_64-linux;
+  in
+  {
     apps = nixinate.nixinate.x86_64-linux self;
+    devShells.x86_64-linux.default = pkgs.mkShellNoCC {
+      packages = with pkgs; [
+        agenix.packages.x86_64-linux.agenix
+        age-plugin-yubikey
+      ];
+    };
     nixosConfigurations.ardana-ax101 = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
